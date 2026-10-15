@@ -14,7 +14,7 @@ o888ooooood8 `Y8bod8P' `Y8bod8P' `Y888""8o o888o o888o     .8'
 
 This example shows how to deploy [a sample SAML-powered CRM - `tombuildsstuff/customer-notes-crm-saml`](https://hub.docker.com/r/tombuildsstuff/customer-notes-crm-saml) to App Service, on [Locally Build](https://locally.build).
 
-It's the App Service counterpart to [the Container Instance SAML example](../example-container-instance-saml): the same SAML application, wired up the same way against Locally's [Directory Emulator](https://locally.build/docs/data-plane-emulators/directory-emulator), but hosted on App Service (via the [Control Plane](https://locally.build/docs/features/control-plane-api)) instead of a Container Instance. The image is imported into a Locally Container Registry and pulled from there, the same as you'd host a private image on Azure.
+It's the App Service counterpart to [the Container Instance SAML example](https://github.com/locallybuild/example-container-instance-saml): the same SAML application, wired up the same way against Locally's [Directory Emulator](https://locally.build/docs/data-plane-emulators/directory-emulator), but hosted on App Service (via the [Control Plane](https://locally.build/docs/features/control-plane-api)) instead of a Container Instance. The image is imported into a Locally Container Registry and pulled from there, the same as you'd host a private image on Azure.
 
 The application itself is a small CRM, which lists customers and lets you view or edit notes depending on your role. Two roles are available:
 
