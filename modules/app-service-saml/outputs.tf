@@ -3,6 +3,11 @@ output "application_url" {
   value       = local.app_public_url
 }
 
+output "sign_in_url" {
+  description = "Locally's SAML launch endpoint for this application, where an identity-provider-initiated sign-in begins."
+  value       = local.sign_in_url
+}
+
 output "sign_in_as" {
   description = "The identities that can sign in, and the application role each holds. Sign in as one of these at the application's sign-in page."
   value = merge(
